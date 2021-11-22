@@ -17,6 +17,6 @@ curl_setopt($request, CURLOPT_POST, 1);
 curl_setopt($request, CURLOPT_POSTFIELDS, $body);
 
 // Execute and capture response
-$response = curl_exec($ch);
-curl_close($ch);
+$response = curl_exec($request);
+curl_close($request);
 
